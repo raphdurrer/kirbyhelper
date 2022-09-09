@@ -1,0 +1,5 @@
+title: Logoimage
+accept:
+  mime: image/png, image/svg+xml, application/svg+xml
+image:
+  back: white

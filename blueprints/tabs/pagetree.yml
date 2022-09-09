@@ -1,0 +1,37 @@
+label: navigation
+icon: folder-structure
+columns:
+  center:
+    width: 1/1
+    fields:
+      headline:
+        label: Navigation
+        numbered: false
+        type: headline
+  left:
+    width: 1/3
+    sections:
+      draft: 
+        extends: sections/allpages
+        status: draft
+        label: Entwürfe
+  right:
+    width: 2/3
+    sections:
+      published:
+        extends: sections/allpages
+        status: published
+        label: Publiziert
+        parent: site
+        search: true
+        layout: table
+        columns:
+          color:
+            label: Farbe
+            type: html
+            value: "<div style='background:{{ page.color }}; width:20px; height:20px'></div>"
+          navigation:
+            label: in Navigation
+            type: tags
+            value: "{{ page.navigation}}"
+      

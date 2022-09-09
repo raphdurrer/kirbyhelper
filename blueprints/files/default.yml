@@ -1,0 +1,8 @@
+title: Bilder
+fields:
+    caption:
+        label: Bildbeschreibung
+        type: text
+    link:
+        label: Url
+        type: text

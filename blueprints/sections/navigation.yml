@@ -1,0 +1,9 @@
+label: Navigation
+type: fields
+fields:
+  navigation:
+    type: multiselect
+    options:
+      main: Hauptnavigation
+      top: Kopfzeile
+      footer: Fusszeile

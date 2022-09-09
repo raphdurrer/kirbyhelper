@@ -1,0 +1,7 @@
+label: Seiten
+type: pages
+status: all
+empty: Es sind keine Seiten erfasst.
+image:
+  query: icon
+  back: white

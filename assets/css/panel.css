@@ -1,0 +1,24 @@
+/*
+ Docono Kirby Default Panel
+ @author Raphael Durrer <raphael@docono.io>
+
+ Imports default panel style from content.docono.io
+ defaults like:
+ --panel-logo and --panel-background could be overwrited
+*/
+
+@import url("https://content.docono.io/panelstyle/css/panel.css");
+
+
+/* Change Logo and Background */
+:root {
+  --panel-background: linear-gradient(
+    to bottom right,
+    hsl(216, 78%, 29%) 50%,
+    hsl(12, 100%, 50%) 10%,
+    hsl(0, 0%, 95%)
+  );
+
+  --panel-logo: url("http://bctec.test/assets/img/bctec-logo.svg");
+}
+

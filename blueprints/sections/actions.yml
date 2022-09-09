@@ -1,0 +1,47 @@
+type: fields
+fields:
+  actiongrid:
+    label: Raster
+    type: structure
+    fields:
+      actionimg:
+        label: Bild
+        type: files
+        multiple: false
+        query: site
+        uploads: 
+          parent: site
+      title:
+        label: Titel
+        type: text
+      text: 
+        label: Text
+        type: textarea
+        buttons: false      
+      linkswitch:
+        label: Linkart
+        type: toggle
+        text:
+          - intern
+          - extern
+        width: 1/6
+      internlink:
+        label: Interne Seite
+        type: pages
+        multiple: false
+        width: 4/6
+        when:
+          linkswitch: false
+      externlink:
+        label: Externe Url
+        type: url
+        width: 5/6
+        when:
+          linkswitch: true
+      linktarget:
+        label: Neue Seite öffnen
+        type: toggle
+        text:
+          - Nein
+          - Ja
+        width: 1/6

@@ -1,0 +1,101 @@
+title: Default Page
+icon: document
+options:
+  changeSlug: false
+
+status:
+  draft:
+    label: Entwurf
+    text: Diese Seite ist unveröffentlicht und ist für Benutzer nicht einsehbar.
+  listed:
+    label: Veröffentlicht
+    text: Diese Seite ist von den Benutzern einsehbar und wird in der Navigation angezeigt die unter «Navigation» ausgewählt wurde.
+
+tabs:
+  pagecontent:
+    label: Seiteninhalt
+    icon: document
+    columns:
+      left:
+        width: 1/4
+        sections:
+          pagetree:
+            extends: sections/allpages
+            label: Unterseiten
+      right:
+        width: 3/4
+        fields:
+          layout:
+            label: Inhalt
+            type: layout
+            empty: Es wurde noch kein Inhalt für diese Seite erfasst
+            layouts:
+              - "12/12"
+              - "6/12, 6/12"
+              - "3/12, 9/12"
+              - "9/12, 3/12"
+            fieldsets:
+              text:
+                label: Standard
+                type: group
+                fieldsets:
+                  - heading
+                  - text
+                  - list
+                  - image
+              plugins:
+                label: Spezielles
+                type: group
+                fieldsets:
+                  - accordionblock
+                  - team
+
+            settings:
+              tabs:
+                grid:
+                  label: Raster
+                  fields:
+                    gridwidth:
+                      label: Raster Breite
+                      type: radio
+                      columns: 4
+                      default: 960px
+                      options:
+                        - value: '773px'
+                          text: klein (773px)
+                        - value: '960px'
+                          text: mittel (960px)
+                        - value: '1157px'
+                          text: gross (1157px)
+                        - value: '100%'
+                          text: ganze Breite
+                    blockStart:
+                      label: Abstand oben
+                      type: range
+                      min: 15
+                      max: 100
+                      step: 5
+                      default: 30
+                      width: 1/2
+                      tooltip:
+                        after: px
+                    blockEnd:
+                      label: Abstand unten
+                      type: range
+                      min: 15
+                      max: 100
+                      step: 5
+                      default: 30
+                      width: 1/2
+                      tooltip:
+                        after: px
+
+                styles:
+                  fields:
+                    class:
+                      type: text
+                    id:
+                      type: text
+  files: tabs/files
+  seo: tabs/seo
+ 

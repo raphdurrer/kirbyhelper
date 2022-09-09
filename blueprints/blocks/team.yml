@@ -1,0 +1,66 @@
+name: Team
+icon: users
+fields:
+  useGlobalTeam:
+    label: Globales Team (Seiteneinstellungen)
+    type: toggle
+
+  teammembers:
+    label: Team
+    type: structure
+    when:
+      useGlobalTeam: false
+    columns:
+      portrait:
+        width: 1/6
+      name:
+        width: 2/6
+      email:
+        width: 2/6
+      phone:
+        width: 2/6
+    fields:
+      leftimggap:
+        type: gap
+        width: 1/4
+      portrait:
+        label: Portrait
+        type: files
+        layout: cards
+        multiple: false
+        required: true
+        size: medium
+        width: 2/4
+        uploads:
+          template: portrait
+        empty: Kein Portraitbild ausgewählt!
+        image:
+          ratio: 3/2
+          back: white
+      rightimggap:
+        type: gap
+        width: 1/4
+      name:
+        label: Name
+        type: text
+      function:
+        label: Funktion
+        type: text
+      email:
+        label: E-Mail
+        type: email
+        width: 1/2
+      phone:
+        label: Telefon
+        type: tel
+        width: 1/2
+      socialmedia:
+        label: Socialmedia
+        type: structure
+        fields:
+          portal:
+            label: Portalname
+            type: text
+          portallink:
+            label: Portallink
+            type: url

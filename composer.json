@@ -1,0 +1,27 @@
+{
+    "name": "docono/kirbyhelper",
+    "description": "Basic Kirby Project Helpers",
+    "keywords": [
+        "kirby-plugin",
+        "docono-kirbyhelper",
+        "kirby3",
+        "kirby-cms"
+    ],
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "version": "1.0.0",
+    "require": {
+        "php": ">=8.0.0",
+        "getkirby/composer-installer": "^1.1"
+    },
+    "authors": [
+        {
+            "name": "DOCONO KlG – Raphael Durrer",
+            "email": "raphael@docono.io"
+        }
+    ],
+    "minimum-stability": "stable",
+    "extra": {
+        "installer-name": "docono-kirbyhelper"
+    }
+}

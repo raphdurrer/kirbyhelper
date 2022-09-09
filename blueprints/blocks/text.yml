@@ -1,0 +1,30 @@
+name: field.blocks.text.name
+icon: text
+wysiwyg: true
+preview: text
+fields:
+  lead:
+    label: Lead
+    type: toggle
+    width: 1/6
+  # align:
+  #   label: Ausrichtung
+  #   type: select
+  #   default: left
+  #   width: 1/6
+  #   options:
+  #     left: Links
+  #     center: Zentriert
+  #     right: Rechts
+  color:
+    label: Color
+    type: select
+    default: "#103d82"
+    width: 1/6
+    options:
+      "#103d82": blau
+      "#ff3300": rot
+  text:
+    type: writer
+    nodes: false
+    placeholder: field.blocks.text.placeholder

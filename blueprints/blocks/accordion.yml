@@ -1,0 +1,19 @@
+name: Accordion
+icon: bars
+fields:
+  accordion:
+    label: Accordion
+    type: structure
+    fields:
+      title:
+        label: Titel
+        required: true
+        type: text
+      text:
+        label: Inhalt
+        type: blocks
+        fieldsets:
+          - heading
+          - text
+          - list
+        required: true

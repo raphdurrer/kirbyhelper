@@ -1,0 +1,8 @@
+label: files
+icon: file
+preset: files
+limit: 100
+size: tiny
+image:
+  back: white
+  ratio: 1/1

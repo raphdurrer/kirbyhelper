@@ -1,0 +1,80 @@
+title: Editor
+description: Der Editor kann alle Seiten bearbeiten
+home: /panel/site
+image:
+  back: "purple-400"
+  color: "white"
+  icon: user
+
+permissions:
+  access:
+    panel: true
+    users: false
+    site: true
+    settings: false
+    languages: false
+  user: 
+    changeRole: false
+    changePassword: true
+    changeName: true
+    changeLanguage: true
+    changeEmail: true
+    create: false
+    delete: false
+    update: true
+  users:
+    update: false
+    delete: false
+    create: false
+    changePassword: false
+    changeName: false
+    changeLanguage: false
+    changeEmail: false
+  languages:
+    create: false
+    delete: false
+  site:
+    changeTitle: true
+    update: true
+  pages:
+    update: true
+    sort: true
+    read: true
+    preview: false
+    duplicate: false
+    delete: true
+    create: true
+    changeTitle: true
+    changeTemplate: false
+    changeStatus: true
+    changeSlug: true
+  files:
+    changeName: true
+    create: true
+    delete: true
+    replace: true
+    update: true
+
+fields:
+  function:
+    label: Funktion
+    type: text
+  phone:
+    label: Telefonnummer
+    type: tel
+    width: 1/2
+  socialmedia:
+    type: structure
+    width: 1/2
+    fields:
+      name:
+        label: Name
+        type: text
+      link:
+        label: Link
+        type: url
+  documents:
+    label: Dokumente
+    type: files
+    empty: "No documents yet"
+    layout: cards

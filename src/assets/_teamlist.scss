@@ -1,0 +1,43 @@
+.teamlist {
+  margin-inline: calc(var(--gap) / 2);
+  max-width: var(--max-width);
+  display: grid;
+  gap: var(--gap);
+
+  @media screen and (min-width: 42rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (min-width: 48rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (min-width: 64rem) {
+    margin-inline: auto;
+  }
+
+  .card {
+    display: grid;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.3em;
+    gap: 1em;
+
+    .person {
+      display: grid;
+      color: var(--clr-black);
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      height: auto;
+      max-height: 16.375rem;
+    }
+
+    [itemprop="name"] {
+      font-size: clamp(1.125rem, 2vw, 1.375rem);
+      color: var(--textColor, var(--clr-black));
+    }
+  }
+}
