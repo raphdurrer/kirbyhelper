@@ -47,16 +47,5 @@ Kirby::plugin('docono/kirbyhelper', [
         'default' => __DIR__ . 'templates/default.php',
         'news' => __DIR__ . 'templates/news.php',
         'newsarticle' => __DIR__ . 'templates/newsarticle.php'
-    ],
-
-    'areas' => [
-        'team' => function ($kirby) {
-            return [
-                'label' => 'Team',
-                'icon'  => 'users',
-                'menu'  => true,
-                'link'  => 'team',
-            ];
-        }
-    ],
+    ]
 ]);
