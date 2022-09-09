@@ -20,7 +20,7 @@
             "email": "raphael@docono.io"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "extra": {
         "installer-name": "docono-kirbyhelper"
     }
