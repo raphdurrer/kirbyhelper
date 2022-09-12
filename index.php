@@ -1,5 +1,5 @@
 <?php
-Kirby::plugin('docono/kirbyhelper', [
+Kirby::plugin('raphdurrer/kirbyhelper', [
 
     'blueprints' => [
         // Users/Roles
