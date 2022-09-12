@@ -9,7 +9,6 @@
     ],
     "type": "kirby-plugin",
     "license": "MIT",
-    "version": "1.0.0",
     "require": {
         "php": ">=8.0.0",
         "getkirby/composer-installer": "^1.1"
