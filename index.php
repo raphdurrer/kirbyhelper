@@ -1,6 +1,5 @@
 <?php
 Kirby::plugin('raphdurrer/kirbyhelper', [
-
     'blueprints' => [
         // Users/Roles
         'users/editor' => __DIR__ . '/blueprints/users/editor.yml',
@@ -27,25 +26,29 @@ Kirby::plugin('raphdurrer/kirbyhelper', [
         // Files
         'files/default' => __DIR__ . '/blueprints/files/default.yml',
         'files/image' => __DIR__ . '/blueprints/files/image.yml',
+        'files/downloads' => __DIR__ . '/blueprints/files/downloads.yml',
     ],
-
     'snippets' => [
         'header' => __DIR__ . '/snippets/header.php',
         'footer' => __DIR__ . '/snippets/footer.php',
+        'newslist' => __DIR__ . '/snippets/newslist.php',
+        'newsarticle' => __DIR__ . '/snippets/newsarticle.php',
         'blocks/text' => __DIR__ . '/snippets/blocks/text.php',
         'blocks/heading' => __DIR__ . '/snippets/blocks/heading.php',
         'blocks/team' => __DIR__ . '/snippets/blocks/team.php',
         'blocks/accordion' => __DIR__ . '/snippets/blocks/accordion.php',
     ],
-
+    'controllers' => [
+        'site' => require 'controllers/site.php'
+    ],
     'collections' => [
         'allpages' => require 'collections/allpages.php',
+        'childpages' => require 'collections/childpages.php',
         'globalteam' => require 'collections/globalteam.php'
     ],
-
     'templates' => [
-        'default' => __DIR__ . 'templates/default.php',
-        'news' => __DIR__ . 'templates/news.php',
-        'newsarticle' => __DIR__ . 'templates/newsarticle.php'
+        'default' => __DIR__ . '/templates/default.php',
+        'news' => __DIR__ . '/templates/news.php',
+        'newsarticle' => __DIR__ . '/templates/newsarticle.php'
     ]
 ]);
