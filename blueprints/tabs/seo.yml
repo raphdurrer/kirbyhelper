@@ -4,6 +4,12 @@ columns:
   west:
     width: 1/3
     fields:
+      noindex:
+        label: Suchindex
+        type: toggle
+        text:
+          - indexiert
+          - vom Index ausgeschlossen
       seoimage:
         label: OG Image
         type: files
